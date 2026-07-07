@@ -1,0 +1,31 @@
+doctype html
+html
+    head
+        title= title
+
+    body
+
+        h1 Add New Pet
+
+
+        a(href="/") Return to the homepage
+
+
+        form(method="POST", action="/update-cobj")
+
+            label Name:
+            input(type="text", name="name")
+
+            br
+
+            label Pet Type:
+            input(type="text", name="pet_type")
+
+            br
+
+            label Color:
+            input(type="text", name="color")
+
+            br
+
+            button(type="submit") Submit

@@ -1,0 +1,25 @@
+doctype html
+html
+    head
+        title= title
+
+    body
+
+        h1= title
+
+        a(href="/update-cobj") Add to this table
+
+        table(border="1")
+
+            tr
+                th Name
+                th Pet Type
+                th Color
+
+
+            each pet in data
+
+                tr
+                    td= pet.properties.name
+                    td= pet.properties.pet_type
+                    td= pet.properties.color
